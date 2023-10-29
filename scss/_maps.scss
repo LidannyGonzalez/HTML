@@ -1,0 +1,24 @@
+// Variables para estilos de mapas
+$map-bg-color: #f7f7f7;
+$map-border-color: #ccc;
+$map-marker-color: blue;
+$map-marker-hover-color: #0056b3;
+
+// Estilos para mapas
+.map {
+    background-color: $map-bg-color;
+}
+
+.map-container {
+    border: 1px solid $map-border-color;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.map-marker {
+    color: $map-marker-color;
+
+    &:hover {
+        color: $map-marker-hover-color;
+    }
+}

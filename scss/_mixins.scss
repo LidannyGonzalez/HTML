@@ -1,0 +1,7 @@
+@mixin button-styles {
+    background-color: $primary-color;
+    color: white;
+    &:hover {
+        background-color: $secondary-color;
+    }
+}
