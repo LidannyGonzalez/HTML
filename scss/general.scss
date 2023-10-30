@@ -1,0 +1,52 @@
+
+.clase {
+    font-family: $font-family;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
+  
+    &:hover {
+        color: blue;
+    }
+
+    &:active {
+        background-color: $primary-color;
+        color: white;
+        padding: 5px 10px;
+    }
+}
+
+p {
+    font-size: 1.3rem;
+    color: $text-color;
+    text-align: center;
+}
+
+h1 {
+    color: $text-color;
+    font-size: 3rem;
+    text-align: center;
+    margin: 10px 0;
+    font-weight: bold;
+    padding-top: 5%;
+    padding-bottom: 2%;
+}
+
+h2 {
+    color: $text-color;
+    font-size: 2rem;
+    text-align: center;
+    font-weight: bold;
+    padding-top: 2%;
+}
+
+.btn-primary {
+    @include button-styles;
+}
+
+
+

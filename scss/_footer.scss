@@ -5,33 +5,91 @@ footer {
     justify-content: space-between;
     align-items: center;
 
-    .redes .redes1 {
-        text-align: center;
-        display: inline-block;
-        margin-right: 20px;
-    }
 
     .redes {
         display: flex;
+    
+        .redes1 {
+            text-align: center;
+            display: inline-block;
+            margin-right: 20px;
+        }
     }
 
-    .texto-largo {
+    .tex-larg .p {
         display: flex;
         text-align: center;
         color: $text-color;
-        width: 20%;
+
+    }
+
+    .tex-larg {
+        display: flex;
+        width: 30%;
     }
 
     .lista-footer {
         display: flex;
+        list-style: none;
         flex-direction: column;
         text-align: center;
-        @include button-styles;
-        font-size: 1rem;
-        margin-right: 1rem;
+        
     }
 
     .piepagina {
         width: 40px;
     }
 }
+
+@media (min-width: 320px) and (max-width: 720px) {
+
+
+    footer {
+        flex-direction: column;
+        max-width: 100%;
+        max-height: 100%;
+      }
+
+      .texto-largo {
+        font-size: 0.8rem;
+        width: 90%;
+        height: auto;
+        margin-bottom: 1rem;
+        margin-top: 1rem;
+    }
+
+      .tex-larg {
+        display: flex;
+        background-color: rgb(163, 6, 6);       
+      }
+    
+      .tex-larg .p {
+        background-color: rgb(20, 206, 76);
+      }
+
+
+      .redes p {
+        font-size: 1rem;
+      }
+    
+      .redes {
+        flex-direction: column;
+        margin-bottom: 1rem;
+      }
+    
+      .lista-footer {
+        flex-direction: row;
+        text-align: center;
+      }
+    
+    .lis {
+        display: flex;
+        justify-content: space-between;
+        font-size: 1rem;
+        margin-right: 1rem;
+      }
+    
+    .piepagina {
+        width: 10%;
+      }
+        }

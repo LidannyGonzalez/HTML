@@ -4,6 +4,68 @@
   box-sizing: border-box;
 }
 
+.clase {
+  font-family: "Roboto Slab", serif;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  font-size: 2rem;
+  font-weight: bold;
+}
+a:hover {
+  color: blue;
+}
+a:active {
+  background-color: #007bff;
+  color: white;
+  padding: 5px 10px;
+}
+
+p {
+  font-size: 1.3rem;
+  color: white;
+  text-align: center;
+}
+
+h1 {
+  color: white;
+  font-size: 3rem;
+  text-align: center;
+  margin: 10px 0;
+  font-weight: bold;
+  padding-top: 5%;
+  padding-bottom: 2%;
+}
+
+h2 {
+  color: white;
+  font-size: 2rem;
+  text-align: center;
+  font-weight: bold;
+  padding-top: 2%;
+}
+
+.btn-primary {
+  background-color: rgb(225, 236, 247);
+  color: #007bff;
+  border: 1px solid #007bff;
+  border-radius: 5px;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1rem;
+  margin-right: 1rem;
+  cursor: pointer;
+}
+.btn-primary:hover {
+  background-color: #0056b3;
+  border: 1px solid white;
+  color: white;
+}
+
 header {
   background-color: rgb(204, 197, 197);
   color: white;
@@ -11,6 +73,9 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+header .iconos {
+  display: flex;
 }
 header .icono {
   margin-right: 1rem;
@@ -30,33 +95,31 @@ header nav ul {
   display: flex;
   justify-content: center;
 }
-header a {
-  text-decoration: none;
-  color: white;
-  font-size: 2rem;
-}
-header a:hover {
-  color: blue;
-}
-header a:active {
-  background-color: #007bff;
-  color: white;
-  padding: 5px 10px;
-}
-
-.icono {
-  margin-right: 1rem;
-  width: 4rem;
-  height: auto;
-}
-
-.logo {
-  width: 15rem;
-  height: auto;
-}
-
-.iconos {
-  display: flex;
+@media (min-width: 320px) and (max-width: 720px) {
+  header header {
+    height: auto;
+    text-align: center;
+  }
+  header .icono {
+    width: 2rem;
+    height: auto;
+  }
+  header .logo {
+    width: 7rem;
+    height: auto;
+  }
+  header ul {
+    flex-direction: column;
+  }
+  header ul li {
+    margin-right: 0;
+    margin-bottom: 0, 5rem;
+    display: block;
+    text-align: center;
+  }
+  header a {
+    font-size: 1rem;
+  }
 }
 
 footer {
@@ -66,56 +129,89 @@ footer {
   justify-content: space-between;
   align-items: center;
 }
+footer .redes {
+  display: flex;
+}
 footer .redes .redes1 {
   text-align: center;
   display: inline-block;
   margin-right: 20px;
 }
-footer .redes {
-  display: flex;
-}
-footer .texto-largo {
+footer .tex-larg .p {
   display: flex;
   text-align: center;
   color: white;
-  width: 20%;
+}
+footer .tex-larg {
+  display: flex;
+  width: 30%;
 }
 footer .lista-footer {
   display: flex;
+  list-style: none;
   flex-direction: column;
   text-align: center;
-  background-color: #007bff;
-  color: white;
-  font-size: 1rem;
-  margin-right: 1rem;
-}
-footer .lista-footer:hover {
-  background-color: #0056b3;
 }
 footer .piepagina {
   width: 40px;
 }
 
+@media (min-width: 320px) and (max-width: 720px) {
+  footer {
+    flex-direction: column;
+    max-width: 100%;
+    max-height: 100%;
+  }
+  .texto-largo {
+    font-size: 0.8rem;
+    width: 90%;
+    height: auto;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+  }
+  .tex-larg {
+    display: flex;
+    background-color: rgb(163, 6, 6);
+  }
+  .tex-larg .p {
+    background-color: rgb(20, 206, 76);
+  }
+  .redes p {
+    font-size: 1rem;
+  }
+  .redes {
+    flex-direction: column;
+    margin-bottom: 1rem;
+  }
+  .lista-footer {
+    flex-direction: row;
+    text-align: center;
+  }
+  .lis {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1rem;
+    margin-right: 1rem;
+  }
+  .piepagina {
+    width: 10%;
+  }
+}
 main {
   display: grid;
   background-image: linear-gradient(to left top, #110f0f, #201d1e, #2e2a2d, #3c393d, #49484f, #53555d, #5e626a, #687078, #747e85, #818c92, #8e9a9f);
   padding-bottom: 25px;
 }
-main h1 {
-  color: white;
-  font-size: 3rem;
-  text-align: center;
-  margin: 20px 0;
-  font-weight: bold;
-  padding-top: 5%;
-  padding-bottom: 2%;
+main form label {
+  font-size: 1.5rem;
+  margin: 2rem;
 }
-main h2 {
-  color: white;
-  font-size: 2rem;
-  text-align: center;
-  font-weight: bold;
-  padding-top: 2%;
+main form select {
+  padding: 5px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 2rem;
 }
 main nav ul {
   list-style: none;
@@ -149,32 +245,16 @@ main .img-fondo {
 main .fondo {
   width: 100%;
   height: 100%;
-  max-width: 100%;
-  max-height: 100%;
 }
 main .video {
   width: 100%;
   height: 100%;
-  max-width: 100%;
-  max-height: 100%;
-}
-main p {
-  font-size: 1.3rem;
-  color: white;
-  text-align: center;
 }
 main .grid-productos {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 25px;
   text-align: center;
-}
-main .grid-productos p {
-  font-size: 1rem;
-  margin-bottom: 0.625rem;
-}
-main .grid-productos a {
-  font-size: 1.125rem;
 }
 main .carousel {
   width: 50%;
@@ -197,22 +277,106 @@ main .catalogo {
   border-right: solid 10px black;
   border-radius: 0 40px 0 40px;
 }
-
-.map {
-  background-color: #f7f7f7;
+@media (min-width: 320px) and (max-width: 720px) {
+  main .video {
+    width: 80%;
+    height: auto;
+    margin: 0 auto;
+  }
+  main .catalogo {
+    width: 70%;
+    height: auto;
+    border: none;
+  }
+  main .grid-productos {
+    grid-template-columns: 1fr;
+    grid-gap: 15px;
+  }
+  main .grid-productos p {
+    font-size: 1rem;
+    margin-bottom: 0.625rem;
+  }
+  main .grid-productos a {
+    font-size: 1.125rem;
+  }
 }
 
-.map-container {
+.formulario-contacto .container {
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #1e2542;
   border: 1px solid #ccc;
   border-radius: 5px;
-  padding: 10px;
+  width: 50%;
+  height: auto;
+}
+.formulario-contacto .form-group {
+  margin-bottom: 20px;
+}
+.formulario-contacto label {
+  font-weight: bold;
+}
+.formulario-contacto .btn-primary {
+  background-color: rgb(225, 236, 247);
+  color: #007bff;
+  border: 1px solid #007bff;
+  border-radius: 5px;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1rem;
+  margin-right: 1rem;
+  cursor: pointer;
+}
+.formulario-contacto .btn-primary:hover {
+  background-color: #0056b3;
+  border: 1px solid white;
+  color: white;
+}
+.formulario-contacto .form-control {
+  border: 2px solid #bdaeae;
+}
+.formulario-contacto .form-control:focus {
+  border-color: #007bff;
+  box-shadow: none;
 }
 
-.map-marker {
-  color: blue;
+@media (min-width: 320px) and (max-width: 720px) {
+  .container.mt-4 {
+    width: 80%;
+    padding: 2%;
+    font-size: 1rem;
+  }
+  .carousel.slide {
+    height: 100%;
+    width: 100%;
+  }
+  main h3 {
+    font-size: 1.5rem;
+  }
+  .form-group {
+    font-size: 1, 5rem;
+    color: white;
+  }
+  h2 {
+    font-size: 1.5rem;
+  }
 }
-.map-marker:hover {
-  color: #0056b3;
+.clase.carrito {
+  height: auto;
+}
+.clase.carrito main h2 {
+  color: white;
+}
+.clase.carrito main h3 {
+  font-size: 1.2rem;
+  color: white;
+}
+.clase.carrito main p {
+  font-size: 1.3rem;
+  color: white;
+  text-align: center;
 }
 
 /*# sourceMappingURL=style.css.map */

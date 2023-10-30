@@ -7,19 +7,4 @@ $main-bg: linear-gradient(to left top, #110f0f, #201d1e, #2e2a2d, #3c393d, #4948
 $input-focus-bg: lightslategray;
 $input-focus-color: blue;
 $footer-bg-color: rgb(204, 197, 197);
-$link-hover-color: [blue];
-
-$nav-list-style: none;
-$nav-display: flex;
-$nav-justify-content: space-between;
-$nav-padding: 0;
-$li-display: inline-block;
-$li-margin-right: 2rem;
-$li-last-child-margin-right: 0;
-$a-text-decoration: none;
-$a-color: white;
-$a-font-size: 2rem;
-$a-hover-color: blue;
-$a-active-bg-color: #007ACC;
-$a-active-color: white;
-$a-active-padding: 5px 10px;
+$link-hover-color: blue;

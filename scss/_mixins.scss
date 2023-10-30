@@ -1,7 +1,19 @@
 @mixin button-styles {
-    background-color: $primary-color;
-    color: white;
+    background-color: rgb(225, 236, 247);
+    color: $primary-color;
+    border: 1px solid $primary-color; 
+    border-radius: 5px;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1rem;
+    margin-right: 1rem;
+    cursor: pointer;
+
     &:hover {
         background-color: $secondary-color;
+        border: 1px solid white;
+        color: white;
     }
 }

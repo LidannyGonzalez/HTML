@@ -6,6 +6,10 @@ header {
     justify-content: space-between;
     align-items: center;
 
+    .iconos {
+        display: flex;
+    }
+
     .icono {
         margin-right: 1rem;
         width: 4rem;
@@ -28,35 +32,37 @@ header {
         justify-content: center;
     }
 
-    a {
-        text-decoration: none;
-        color: white;
-        font-size: 2rem;
-        &:hover {
-            color: blue;
+    @media (min-width: 320px) and (max-width: 720px) {
+
+        header {
+            height: auto;
+            text-align: center;
         }
-
-        &:active {
-            background-color: $primary-color;
-            color: white;
-            padding: 5px 10px;
+    
+        .icono {
+            width: 2rem; 
+            height: auto;
         }
+    
+        .logo {
+            width: 7rem; 
+            height: auto
+        }
+    
+        ul {
+            flex-direction: column;
+        }
+    
+        ul li {
+            margin-right: 0;
+            margin-bottom: 0,5rem;
+            display: block;
+            text-align: center;
+        }
+    
+        a {
+            font-size: 1rem;
+        }   
     }
-}
-
-
-    .icono {
-        margin-right: 1rem;
-        width: 4rem;
-        height: auto;
+    
     }
-
-    .logo {
-        width: 15rem;
-        height: auto;
-    }
-
-
-.iconos {
-    display: flex;
-}
