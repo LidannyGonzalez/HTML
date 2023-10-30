@@ -2,12 +2,14 @@ footer {
     background-color: $footer-bg;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
+    padding: 1.5rem;
 
 
     .redes {
         display: flex;
+        flex: 1;
+        align-items: center;
+        justify-content: center;
     
         .redes1 {
             text-align: center;
@@ -16,24 +18,19 @@ footer {
         }
     }
 
-    .tex-larg .p {
+    .tex-larg {
         display: flex;
         text-align: center;
         color: $text-color;
-
-    }
-
-    .tex-larg {
-        display: flex;
-        width: 30%;
+        flex:0.5;
     }
 
     .lista-footer {
         display: flex;
+        flex: 1;
         list-style: none;
         flex-direction: column;
-        text-align: center;
-        
+        text-align: center;        
     }
 
     .piepagina {
@@ -46,28 +43,20 @@ footer {
 
     footer {
         flex-direction: column;
-        max-width: 100%;
-        max-height: 100%;
       }
-
-      .texto-largo {
-        font-size: 0.8rem;
-        width: 90%;
-        height: auto;
-        margin-bottom: 1rem;
-        margin-top: 1rem;
-    }
 
       .tex-larg {
         display: flex;
-        background-color: rgb(163, 6, 6);       
-      }
-    
-      .tex-larg .p {
-        background-color: rgb(20, 206, 76);
-      }
+        text-align: center;
+        color: $text-color; 
+    }
 
-
+      .texto-largo {
+        font-size: 0.8rem;
+        margin-bottom: 1rem;
+        margin-top: 1rem;
+    }
+  
       .redes p {
         font-size: 1rem;
       }
@@ -83,8 +72,6 @@ footer {
       }
     
     .lis {
-        display: flex;
-        justify-content: space-between;
         font-size: 1rem;
         margin-right: 1rem;
       }

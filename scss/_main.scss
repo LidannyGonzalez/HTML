@@ -1,7 +1,7 @@
 main {
     display: grid;
     background-image: $main-bg;
-    padding-bottom: 25px;
+    padding-bottom: 4rem;
 
     form {
         label {
@@ -21,7 +21,7 @@ main {
     nav ul {
         list-style: none;
         display: flex;
-        justify-content: center; // Espacio entre los elementos
+        justify-content: center;
     }
     
     li {
@@ -97,12 +97,10 @@ main {
 
     @media (min-width: 320px) and (max-width: 720px) {
 
-        .video {
-            width: 80%; 
-            height: auto; 
-            margin: 0 auto; 
+        .img-fondo {
+            grid-template-columns: 1fr;
         }
-    
+        
         .catalogo {
             width: 70%; 
             height: auto; 
