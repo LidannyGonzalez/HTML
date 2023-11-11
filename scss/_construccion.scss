@@ -1,0 +1,45 @@
+body.construccion {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: $main-bg center/cover no-repeat;
+
+    .matenimiento {
+        text-align: center;
+        padding: 50px;
+        color: $text-color;
+        font-family: $font-family;
+
+        h1 {
+            margin-bottom: 20px;
+        }
+
+        p {
+            margin-bottom: 40px;
+        }
+
+        .imgconstruccion {
+            width: 100%;
+            max-width: 50%; 
+            border-radius: 8px;
+        }
+    }
+
+    }
+
+    
+@media (min-width: 320px) and (max-width: 720px) {
+
+    .matenimiento {
+        padding: 5px;
+
+        h1 {
+            font-size: 1.9rem; 
+        }
+
+        p {
+            font-size: 1.2rem; 
+        }
+    } 
+}
